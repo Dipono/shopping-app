@@ -1,14 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { decrement, increment} from './component/action/index';
 import { useSelector, useDispatch} from 'react-redux';
+import productData from './component/data/productData'
+import {displayProduct} from './component/features/products';
 
 function App() {
 
-  const counter = useSelector((state) => state.counter);
+  const product = useSelector((state) => state.product.value);
+  const dispatch = useDispatch()
+  dispatch(displayProduct(productData))
+  console.log(product)
   return (
     <div className="App">
-      <h1>Counter {counter}</h1>
+      {product.map((prod)=>(
+        <div>
+          <img src={prod.image}/>
+          </div>
+      ))}
+
     </div>
   );
 }
