@@ -1,24 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useSelector, useDispatch} from 'react-redux';
-import productData from './component/data/productData'
-import {displayProduct} from './component/features/products';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Product from './component/Products/Product'
 function App() {
 
-  const product = useSelector((state) => state.product.value);
-  const dispatch = useDispatch()
-  dispatch(displayProduct(productData))
-  console.log(product)
-  return (
-    <div className="App">
-      {product.map((prod)=>(
-        <div>
-          <img src={prod.image}/>
-          </div>
-      ))}
 
-    </div>
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<Product />}/>
+      </Routes>
+    </Router>
   );
 }
 
