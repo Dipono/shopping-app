@@ -7,12 +7,17 @@ import reportWebVitals from './reportWebVitals';
 import { configureStore } from "@reduxjs/toolkit";
 
 import productReducers from './component/features/products';
+import couterReducer from './component/features/counter';
+import amountReducer from './component/features/amount';
+
 
 import { Provider } from 'react-redux'
 
 const store = configureStore({
   reducer: {
-    product : productReducers
+    product : productReducers,
+    counter : couterReducer,
+    amount: amountReducer
   }
 })
 

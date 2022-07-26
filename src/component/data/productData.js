@@ -36,9 +36,14 @@ import watche2 from "../assets/watche2.jpg";
 
 
 const products = [
-{id:1, name:"apple Ipad", description:"3 ipad, you only choose one with its combo", price:0, image:apple_combo1, category:"apple, iphone, ipad, iphone, watch, glassess"},
-{id:2, name:"full apple combo", description:"ipad, cellphone, earphone, watch and apple pen", price:0, image:apple_combo2, category:"apple,Ipad,watch"},
-{id:3, name:"apple gadgets", description:"choose ipad with one iphone", price:0, image:apple_combo3, category:"apple, iphone,Ipad"},
+{id:1, name:"apple Ipad", description:"3 ipad, you only choose one with its combo", price:10000, image:apple_combo1, category:"apple, iphone, ipad, iphone, watch, glassess"},
+{id:2, name:"full apple combo", description:"ipad, cellphone, earphone, watch and apple pen", price:12000, image:apple_combo2, category:"apple,Ipad,watch"},
+{id:3, name:"apple gadgets", description:"choose ipad with one iphone", price:50000, image:apple_combo3, category:"apple, iphone,Ipad"},
+{id:4, name:"apple gadgets core", description:"one laptop comes with one ipad", price:90000, image:apple_combo4, category:"apple, iphone,Ipad"},
+{id:5, name:"apple watches", description:"apple watches, water resistance they can also check your palse or heart rate", price:50, image:apple_watche1, category:"apple, watch"},
+{id:5, name:"iphone pro max", description:"choose one iphone of your desired colour, with updated security features, and cameras both front and back", price:32000, image:applec_phone, category:"apple, iphone"},
+{id:6, name:"camp backpack", description:"backpack with custom made qulity", price:700, image:backpack, category:"backpack"},
+{id:7, name:"kwest camera", description:"good for camping, strong camera made with quality materials", price:17000, image:camera1, category:"camera"},
 ]
 
 export default products;
